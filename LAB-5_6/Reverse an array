@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	int i,a[10];
+	printf("Enter 10 elements for array \n");
+	for(i=1;i<=10;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("The reversed array is \n");
+	for(i=10;i>=1;i--)
+	{
+		printf("%d  ",a[i]);
+	}
+}

@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,a[n],t,x,index;
+	printf("Enter value of n \n");
+	scanf("%d",&n);
+	printf("Enter elements of the array\n");
+	
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("Array is\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d ",a[i]);
+	}
+	printf("\n");
+	printf("Enter target element\n");
+	scanf("%d",&x);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==x)
+		{
+			index=i;
+		}
+		else{
+			index=-1;
+		}
+	}
+	if(index==-1)
+	{
+		printf("Target element not found\n");
+	}
+	else
+	{
+		printf("Found element at index %d\n",index);
+	}
+	
+
+}

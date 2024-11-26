@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+
+    printf("1 for area of circle\n");
+    printf("2 for area of rectangle\n");
+    printf("3for area of triangle\n");
+    printf("4 for area of square\n");
+    scanf("%d",&n);
+    if(n==1)
+    {
+        float pi=3.14;
+        float r;
+        printf("enter Radius of Circle:\n");
+        scanf("%f",&r);
+        printf("Area of circle is %f",pi*r*r);
+    }
+    else if(n==2)
+    {
+        float l,b;
+        printf("Enter length and breath of Rectangle:\n");
+        scanf("%f%f",&l,&b);
+        printf("Area of Rectangle is %f",l*b);
+    }
+    else if(n==3)
+    {
+        float b,h;
+        printf("Enter breath and height of Triangle:\n");
+        scanf("%f%f",&h,&b);
+        printf("Area of Triangle is %f",1/2*b*h);
+    }
+    else if (n==4)
+    {
+        float s;
+        printf("Enter side of square:\n");
+        scanf("%f",&s);
+        printf("Area of Square is %f",s*s);
+    }
+}

@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int ch;
+    float s,l,b,h,r;
+    float pi=3.14;
+    printf("1 for volume of cube\n");
+    printf("2 for volume of cuboid\n");
+    printf("3 for volume of cylinder\n");
+    printf("4 for volume of sphere\n");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1: 
+        printf("Enter sides of cube:\n");
+        scanf("%f",&s);
+        printf("Volume of cube is %f",s*s*s);
+        break;
+        case 2:
+        printf("Enter length,Breath and height of cuboid\n");
+        scanf("%f%f%f",&l,&b,&h);
+        printf("Volume of cuboid is %f",l*b*h);
+        break;
+        case 3:
+        printf("Enter radius and height of cylinder:\n");
+        scanf("%f%f",&r,&h);
+        printf("Volume of Cylinder is %f",pi*r*r);
+        break;
+        case 4:
+        printf("Enter radius of Sphere:\n");
+        scanf("%f",&r);
+        printf("Volume of Sphere is %lf",(4/3)*r*r*r);
+        break;
+    }
+}
